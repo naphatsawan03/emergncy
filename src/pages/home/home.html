@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Phone Book
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+  <div class="showhead">
+    <img src="https://th.seaicons.com/wp-content/uploads/2015/11/phonebook-icon.png" alt="">
+    <p>Myphonebook</p>
+  </div>
+  <ion-list>
+    <ion-item (click)="goToFriendslist()">
+      <ion-icon name="people" item-start></ion-icon>Friends List
+    </ion-item>
+    <ion-item (click)="goToEmergency()">
+      <ion-icon name="call" item-start></ion-icon>Emergency contact
+    </ion-item>
+  </ion-list>
 </ion-content>
